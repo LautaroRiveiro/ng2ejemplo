@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
-import { Producto } from './producto';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css'],
+  styles: [`
+    .sebm-google-map-container {
+       height: 300px;
+     }
+  `],
 })
 export class AppComponent {
-  title = 'app works!';
-  producto: Producto = new Producto(1,"Papas");
+  title: string = 'My first AGM project';
+  lat: number = 51.678418;
+  lng: number = 7.809007;
 }
